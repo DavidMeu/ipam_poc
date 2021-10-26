@@ -54,6 +54,7 @@ INSTALLED_APPS = [
 SITE_ID = 1
 AUTH_USER_MODEL = "openwisp_users.User"
 OPENWISP_USERS_AUTH_API = True
+OPENWISP_USERS_AUTH_THROTTLE_RATE = "1000/day"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
